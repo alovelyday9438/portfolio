@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <style>
+        /* General styles */
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        section {
+            padding: 2rem 0;
+        }
+        .about-me {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+        .about-me img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .about-me .bio {
+            max-width: 60%;
+            padding-left: 2rem;
+        }
+        .projects ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            gap: 1rem;
+        }
+        .projects li {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .projects h3 {
+            margin-top: 0;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .skills li {
+            background: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 2rem;
+        }
+        .timeline:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 20px;
+            width: 4px;
+            height: 100%;
+            background-color: #333;
+        }
+        .timeline-item {
+            padding: 1rem 2rem;
+            background: #fff;
+            margin-bottom: 1rem;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+        .timeline-item h4 {
+            margin-top: 0;
+            color: #333;
+        }
+        .timeline-item p {
+            margin-bottom: 0;
+            color: #666;
+        }
+        .contact {
+            text-align: center;
+        }
+        .contact p {
+            margin: 0.5rem 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        /* Responsive layout */
+        @media (max-width: 768px) {
+            .about-me {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about-me img {
+                margin-bottom: 1rem;
+            }
+            .about-me .bio {
+                max-width: 100%;
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="profile.jpg" alt="John Doe" width="150" height="150" style="border-radius: 50%;">
+            <h1>John Doe</h1>
+            <p>Full Stack Developer</p>
+        </div>
+    </header>
+
+    <section class="about-me">
+        <div class="container">
+            <div class="bio">
+                <h2>About Me</h2>
+                <p>Hello! I’m John, a passionate developer with a love for creating dynamic and responsive web applications. With a strong background in both frontend and backend development, I strive to build seamless user experiences and robust web applications.</p>
+            </div>
+            <img src="profile.jpg" alt="John Doe" width="300" height="300" style="border-radius: 12px;">
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>Project One</h3>
+                    <p>Description of project one. This project involved using HTML, CSS, and JavaScript to create a responsive web application.</p>
+                </li>
+                <li>
+                    <h3>Project Two</h3>
+                    <p>Description of project two. This project was a full-stack application using Node.js, Express, and MongoDB.</p>
+                </li>
+                <li>
+                    <h3>Project Three</h3>
+                    <p>Description of project three. This project focused on developing a mobile application using React Native.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>Git</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="timeline">
+        <div class="container">
+            <h2>Job History</h2>
+            <div class="timeline-item">
+                <h4>Software Engineer</h4>
+                <p>ABC Tech Solutions</p>
+                <p>January 2020 - Present</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida mi nec est cursus, ac eleifend urna hendrerit.</p>
+            </div>
+            <div class="timeline-item">
+                <h4>Web Developer</h4>
+                <p>XYZ Web Agency</p>
+                <p>June 2017 - December 2019</p>
+                <p>Integer eget libero et justo posuere ullamcorper. Proin sed dolor non eros gravida feugiat at nec lorem.</p>
+            </div>
+            <!-- Add more timeline items as needed -->
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: john.doe@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></p>
+            <p>GitHub: <a href="https://github.com/johndoe" target="_blank">github.com/johndoe</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
